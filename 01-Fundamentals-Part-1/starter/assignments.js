@@ -23,7 +23,6 @@ console.log(description);
 */
 
 /*
-*/
 //Code CHALLENGE 1
 const massMark = 95; // in kg
 const heightMark = 1.88; // in meters
@@ -40,9 +39,10 @@ console.log(BMIMark, BMIJohn, markHigherBMI);
 //Code CHALLENGE 2
 if (markHigherBMI)
 {
-    console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
+console.log(`Mark's BMI (${BMIMark}) is higher than John's (${BMIJohn})!`);
 }
 else
-{
-    console.log(`John's BMI (${BMIJohn}) is higher than Mark's! (${BMIMark})`);
+    {
+console.log(`John's BMI (${BMIJohn}) is higher than Mark's! (${BMIMark})`);
 }
+*/

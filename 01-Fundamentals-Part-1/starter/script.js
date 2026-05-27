@@ -157,4 +157,90 @@ else
 century = 21;
 }
 console.log(century);
+
+// Type conversion
+const inputYear = "2000";
+console.log(Number(inputYear) + 18);
+console.log(inputYear + 18);
+
+console.log(Number("Amber"));
+console.log(typeof NaN);
+
+console.log(String(25), 25);
+
+//Type coercion
+console.log(`I am ` + 25 + ` years old`);
+console.log(`23` - `10` - 3);
+console.log(`23` * `2`);
+
+let n = `1` + 1; //`11` to sting
+n = n - 1; //10
+console.log(n);
+
+// 5 Falsy values: 0, "", undefined, null, NaN
+//Usefull to see if something is valid
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Amber"));
+console.log(Boolean({}));
+console.log(Boolean(""));
+
+const money = 100;
+if (money)
+{
+console.log(`Don't spend it all ;)`);
+}
+else 
+    {
+console.log(`You should get some money!`);
+}    
+
+let height = 0;
+if(height)
+{
+console.log(`YAY!, Height is defined`);
+}
+else
+    {
+console.log(`Height is UNDEFINED`)
+}
 */
+
+const age = "18";
+if(age === 18)
+{
+    console.log(`You just became an adult! :D (strict)`);
+}
+if(age == 18)
+{
+    console.log(`You just became an adult! :D (loose)`);
+}
+
+// === is equal to (strict) no type conversion
+// ==  is equal to with type conversion
+
+let favorieteNumber = Number(prompt("What is your favoriete number?"));
+console.log(favorieteNumber);
+console.log(typeof favorieteNumber);
+
+if (favorieteNumber === 23) // 23 === 23
+{
+    console.log(`Cool! 23 is an amazing number!`);
+}
+else if (favorieteNumber === 7)
+{
+    console.log(`7 is also a cool number!`);
+}
+else if (favorieteNumber === 9)
+{
+    console.log(`Owh like 9 lives of a cat 😻 cool!`);
+}
+else
+{
+    console.log(`Owh I like 23 or 7 or 9 :(`);
+}
+
+if (favorieteNumber !== 23)
+{
+    console.log(`Why not 23?`);
+}
