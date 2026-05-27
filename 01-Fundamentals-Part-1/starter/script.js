@@ -204,16 +204,15 @@ else
     {
 console.log(`Height is UNDEFINED`)
 }
-*/
 
 const age = "18";
 if(age === 18)
 {
-    console.log(`You just became an adult! :D (strict)`);
+console.log(`You just became an adult! :D (strict)`);
 }
 if(age == 18)
 {
-    console.log(`You just became an adult! :D (loose)`);
+console.log(`You just became an adult! :D (loose)`);
 }
 
 // === is equal to (strict) no type conversion
@@ -229,18 +228,48 @@ if (favorieteNumber === 23) // 23 === 23
 }
 else if (favorieteNumber === 7)
 {
-    console.log(`7 is also a cool number!`);
+console.log(`7 is also a cool number!`);
 }
 else if (favorieteNumber === 9)
 {
-    console.log(`Owh like 9 lives of a cat 😻 cool!`);
+console.log(`Owh like 9 lives of a cat 😻 cool!`);
 }
 else
-{
-    console.log(`Owh I like 23 or 7 or 9 :(`);
+    {
+console.log(`Owh I like 23 or 7 or 9 :(`);
 }
 
 if (favorieteNumber !== 23)
 {
-    console.log(`Why not 23?`);
+console.log(`Why not 23?`);
+}
+*/
+
+const hasDriversLicense = true; //A
+const hasGoodVission = true;    //B
+
+console.log(hasDriversLicense && hasGoodVission);
+console.log(hasDriversLicense || hasGoodVission);
+console.log(!hasDriversLicense);
+
+// if (hasDriversLicense && hasGoodVission)
+// {
+//     console.log(`Shara is able to drive`);
+// }
+// else
+// {
+//     console.log(`someone else should drive`);
+// }
+
+const isTired = false; //C
+console.log(hasDriversLicense && hasGoodVission && isTired);
+
+
+if (hasDriversLicense && hasGoodVission && !isTired)
+{
+    console.log(`Shara is able to drive`);
+}
+else
+{
+    console.log(`someone else should drive`);
 }
