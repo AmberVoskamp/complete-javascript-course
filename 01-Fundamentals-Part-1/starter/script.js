@@ -111,3 +111,23 @@ console.log(x, y);
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 */
+
+const firstName = "Amber";
+const job = "programmer";
+const birthYear = 2000;
+const year = 2037;
+
+const amber = "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+console.log(amber);
+
+const amberNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(amberNew);
+console.log(`Just a regular string...`);
+
+console.log("string with \n\
+multiple  \n\
+lines");
+
+console.log(`String
+multiple
+lines`);
