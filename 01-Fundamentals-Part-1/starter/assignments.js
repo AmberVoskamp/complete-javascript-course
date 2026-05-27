@@ -21,3 +21,18 @@ console.log(population < 33);
 const description = country + " is in " + continent + ", and its " + population + " million people speak " + laguage;
 console.log(description);
 */
+
+/*
+//Code CHALLENGE 1
+const massMark = 95; // in kg
+const heightMark = 1.88; // in meters
+
+const massJohn = 85; // in kg
+const heightJohn = 1.76; // in meters
+
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+const markHigherBMI = BMIMark > BMIJohn;
+
+console.log(BMIMark, BMIJohn, markHigherBMI);
+*/

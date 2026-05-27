@@ -95,7 +95,6 @@ const isFullAge = ageSarah >= 18;
 console.log(isFullAge);
 
 console.log(now - 2000 > now - 2018);
-*/
 
 const now = 2036;
 const ageJonas = now - 2000;
@@ -111,3 +110,4 @@ console.log(x, y);
 
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
+*/
