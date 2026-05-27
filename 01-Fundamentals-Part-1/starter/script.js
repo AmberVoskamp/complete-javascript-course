@@ -243,7 +243,6 @@ if (favorieteNumber !== 23)
 {
 console.log(`Why not 23?`);
 }
-*/
 
 const hasDriversLicense = true; //A
 const hasGoodVission = true;    //B
@@ -257,7 +256,7 @@ console.log(!hasDriversLicense);
 //     console.log(`Shara is able to drive`);
 // }
 // else
-// {
+    // {
 //     console.log(`someone else should drive`);
 // }
 
@@ -267,9 +266,61 @@ console.log(hasDriversLicense && hasGoodVission && isTired);
 
 if (hasDriversLicense && hasGoodVission && !isTired)
 {
-    console.log(`Shara is able to drive`);
+console.log(`Shara is able to drive`);
+}
+else
+    {
+console.log(`someone else should drive`);
+}
+*/
+
+const day = "sunday";
+
+switch(day) 
+{
+    case "monday": // day === "monday"
+        console.log(`Plan course structure`);
+        break;
+    case "tuesday":
+        console.log(`Do some programing`);
+        break;   
+    case "wednesday":
+    case "thursday":
+        console.log(`Work on documentation`);
+        break;   
+    case "friday":
+        console.log(`Meeting day`);
+        break;   
+    case "saturday":
+    case "sunday":
+        console.log(`WEEKEND!!!!`);
+        break; 
+    default:
+        console.log("Not a valid day");
+        break;
+}
+
+if (day === "monday")
+{
+    console.log(`Plan course structure`);
+}
+else if (day === "tuesday")
+{
+    console.log(`Do some programing`);
+}
+else if (day === "wednesday" || day === "thursday")
+{
+    console.log(`Work on documentation`);
+}
+else if (day === "friday")
+{
+    console.log(`Meeting day`);
+}
+else if (day === "saturday" || day === "sunday")
+{
+    console.log(`WEEKEND!!!!`);
 }
 else
 {
-    console.log(`someone else should drive`);
+     console.log("Not a valid day");
 }

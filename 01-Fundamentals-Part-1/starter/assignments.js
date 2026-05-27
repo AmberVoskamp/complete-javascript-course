@@ -45,4 +45,40 @@ else
     {
 console.log(`John's BMI (${BMIJohn}) is higher than Mark's! (${BMIMark})`);
 }
+
+// const scoreDolphins = (96 + 108 + 89) / 3;
+// const scoreKoalas = (88 + 91 + 110) / 3;
+
+// if (scoreDolphins > scoreKoalas) //Dolphins win
+// {
+    //     console.log(`Dolphins win the trophy 🏆`);
+    // }
+    // else if (scoreKoalas > scoreDolphins) // Koalas win
+    // {
+        //     console.log(`Koalas win th trophy 🏆`);
+// }
+// else // They both win
+// {
+    //     console.log(`Both win the trophy`);
+    // }
+    
+    const scoreDolphins = (97 + 112 + 81) / 3;
+    const scoreKoalas = (109 + 95 + 56) / 3;
+    
+    if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) //Dolphins win
+    {
+        console.log(`Dolphins win the trophy 🏆`);
+    }
+    else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) // Koalas win
+    {
+        console.log(`Koalas win th trophy 🏆`);
+    }
+    else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100) // They both win
+    {
+        console.log(`Both win the trophy 🏆🏆`);
+    }
+    else 
+        {
+    console.log(`No one wins the trophy 😭`)
+}
 */
