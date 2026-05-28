@@ -272,7 +272,6 @@ else
     {
 console.log(`someone else should drive`);
 }
-*/
 
 const day = "sunday";
 
@@ -284,26 +283,26 @@ switch(day)
     case "tuesday":
         console.log(`Do some programing`);
         break;   
-    case "wednesday":
-    case "thursday":
+        case "wednesday":
+            case "thursday":
         console.log(`Work on documentation`);
         break;   
     case "friday":
         console.log(`Meeting day`);
         break;   
-    case "saturday":
-    case "sunday":
-        console.log(`WEEKEND!!!!`);
-        break; 
-    default:
-        console.log("Not a valid day");
-        break;
-}
-
-if (day === "monday")
-{
-    console.log(`Plan course structure`);
-}
+        case "saturday":
+            case "sunday":
+                console.log(`WEEKEND!!!!`);
+                break; 
+                default:
+                    console.log("Not a valid day");
+                    break;
+                }
+                
+                if (day === "monday")
+                {
+                console.log(`Plan course structure`);
+            }
 else if (day === "tuesday")
 {
     console.log(`Do some programing`);
@@ -314,13 +313,21 @@ else if (day === "wednesday" || day === "thursday")
 }
 else if (day === "friday")
 {
-    console.log(`Meeting day`);
+console.log(`Meeting day`);
 }
 else if (day === "saturday" || day === "sunday")
 {
-    console.log(`WEEKEND!!!!`);
+console.log(`WEEKEND!!!!`);
 }
 else
 {
-     console.log("Not a valid day");
+console.log("Not a valid day");
 }
+*/
+
+if (23 > 10) {
+    const str = "23 is bigger";
+}
+
+const me = "Amber";
+console.log(`I'm ${2037 - 2000} years old ${me}`);
