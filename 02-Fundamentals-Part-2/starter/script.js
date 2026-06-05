@@ -10,7 +10,6 @@ if (hasDriversLicense) console.log("I can drive :D");
 
 // const interface = "Audio";
 //const private = 534;
-*/
 
 //Lesson 34
 function logger(){
@@ -32,3 +31,20 @@ console.log(appleJuice);
 
 const appleOrangeJuice = fruitProcessor(2,4);
 console.log(appleOrangeJuice);
+*/
+
+//Lesson 35 
+const age1 = calcAge1(2000);
+
+//Function declaration
+function calcAge1 (birthYear){
+    return 2037 - birthYear;
+}
+
+//Function expression
+const calcAge2 = function (birthYear){
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(2000);
+
+console.log(age1, age2);
