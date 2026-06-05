@@ -85,7 +85,6 @@ function fruitProcessor(apples, oranges){
 } 
 
 console.log(fruitProcessor(2, 3));
-*/
 
 // Lesson 38
 
@@ -96,18 +95,45 @@ const calcAge = function (birthYear){
 const yearsUntilRetirement = function (birthYear, firstName) {
     const age = calcAge(birthYear);
     const untilRetirement = 65 - age;
-
+    
     if (untilRetirement > 0){
         console.log(`${firstName} retires in ${untilRetirement} years`);
         return untilRetirement;
     }
     else{
         console.log(`${firstName} has already retired 🎉`);
-        return -1;
-    }
+    return -1;
+}
 
-    //return `${firstName} retires in ${untilRetirement} years`;
+//return `${firstName} retires in ${untilRetirement} years`;
 }
 
 console.log(yearsUntilRetirement(2000, "Amber"));
 console.log(yearsUntilRetirement(1969, "Robin"));
+*/
+
+//Lesson 39 CHALLANGE 1
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+
+let scoreDolphins = calcAverage(85, 54, 41);
+let scoreKoalas = calcAverage(23, 34, 27);
+
+const checkWinner = function (avgDolphins, avgKoalas){
+    if(avgDolphins >= avgKoalas * 2){
+        console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+    }
+    else if(avgKoalas >= avgDolphins * 2){
+        console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+    }
+    else{
+        console.log(`No team wins...`);
+    }
+}
+
+checkWinner(scoreDolphins, scoreKoalas);
+
+//Test 2
+scoreDolphins = calcAverage(44, 23, 71);
+scoreKoalas = calcAverage(65, 54, 49);
+
+checkWinner(scoreDolphins, scoreKoalas);
