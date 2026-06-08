@@ -409,7 +409,6 @@ for (let i = 0; i < amberArray.length; i++) {
     
     console.log(amberArray[i], typeof amberArray[i]);
 }
-*/
 
 //Lesson 49
 const amberArray = [
@@ -430,4 +429,27 @@ for (let exercise = 1; exercise <= 3; exercise++) {
     for (let i = 1; i <= 5; i++) {
         console.log(`Exercise ${exercise} Lifting weights repitition ${i} 🏋️`);
     }   
+}
+*/
+
+//Lesson 50
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repitition ${rep} 🏋️`);
+// }
+
+let rep = 1;
+while (rep <= 10){
+   // console.log(`WHILE: Lifting weights repitition ${rep} 🏋️`);
+    rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while(dice !== 6){
+    console.log(`You rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
+
+    if(dice === 6){
+        console.log(`Loop it about to end...`);
+    }
 }
