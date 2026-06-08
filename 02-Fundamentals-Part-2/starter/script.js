@@ -358,7 +358,6 @@ console.log(`${higherBMI.fullName}'s BMI (${higherBMI.bmi}) is higher than ${low
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repitition ${rep} 🏋️`);
 }
-*/
 
 //Lesson 48
 const amberArray = [
@@ -375,7 +374,7 @@ const types = [];
 for (let i = 0; i < amberArray.length; i++) {
     //Reading the amber Array
     console.log(amberArray[i], typeof amberArray[i]);
-
+    
     //Filling types array
     //types[i] = typeof amberArray[i];
     types.push(typeof amberArray[i]);
@@ -398,7 +397,7 @@ for (let i = 0; i < amberArray.length; i++) {
     if (typeof amberArray[i] !== "string"){
         continue;
     }
-
+    
     console.log(amberArray[i], typeof amberArray[i]);
 }
 
@@ -407,6 +406,28 @@ for (let i = 0; i < amberArray.length; i++) {
     if (typeof amberArray[i] === "number"){
         break;
     }
-
+    
     console.log(amberArray[i], typeof amberArray[i]);
+}
+*/
+
+//Lesson 49
+const amberArray = [
+    "Amber",
+    "Voskamp",
+    2037 - 2000,
+    "programmer",
+    ["Janco", "Eline", "Sabrina"],
+    true
+];
+
+for(let i = amberArray.length - 1; i >= 0; i--){
+    console.log(amberArray[i]);
+}
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+    console.log(`🏋️ STARTING EXERSICE ${exercise} 🏋️`);
+    for (let i = 1; i <= 5; i++) {
+        console.log(`Exercise ${exercise} Lifting weights repitition ${i} 🏋️`);
+    }   
 }
