@@ -136,7 +136,6 @@ scoreDolphins = calcAverage(44, 23, 71);
 scoreKoalas = calcAverage(65, 54, 49);
 
 checkWinner(scoreDolphins, scoreKoalas);
-*/
 
 // Lesson 40
 
@@ -180,3 +179,37 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+*/
+
+//Lesson 41
+
+const friends = ["Janco", "Eline", "Sabrina"];
+
+//Add elements
+const newLenght = friends.push("Renske");
+console.log(friends);
+console.log(newLenght);
+
+friends.unshift("Nick");
+console.log(friends);
+
+//Remove elements
+friends.pop(); // Last
+const popped = friends.pop(); // Last
+
+console.log(friends);
+console.log(popped);
+
+friends.shift() // First
+console.log(friends);
+
+console.log(friends.indexOf("Eline"));
+console.log(friends.indexOf("Nick"));
+
+friends.push(23);
+console.log(friends.includes("Eline"));
+console.log(friends.includes(23));
+
+if (friends.includes("Janco")){
+    console.log("You have a friend called Janco");
+}
