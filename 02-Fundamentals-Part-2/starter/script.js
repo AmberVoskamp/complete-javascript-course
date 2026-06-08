@@ -179,7 +179,6 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
-*/
 
 //Lesson 41
 
@@ -213,3 +212,19 @@ console.log(friends.includes(23));
 if (friends.includes("Janco")){
     console.log("You have a friend called Janco");
 }
+*/
+
+//Lesson 42 CHALLANGE 2
+const calcTip = function (billValue){
+    //return 15% if it is between 50 and 300 otherwise return 20%
+    return billValue >= 50 && billValue <= 300 ? billValue * 0.15 : billValue * 0.2;
+}
+
+console.log(calcTip(100));
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+console.log(tips);
+
+const totals = [bills[0] + tips [0], bills[1] + tips [1], bills[2] + tips [2]];
+console.log(totals);
