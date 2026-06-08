@@ -320,14 +320,13 @@ console.log(amber.age);
 console.log(amber.getSummary());
 
 //console.log(amber['calcAge']());
-*/
 
 //Lesson 46 CHALLANGE 3
 const mark = {
     fullName: "Mark Miller",
     mass: 78,
     height: 1.69,
-
+    
     calcBMI: function (){
         this.bmi = this.mass / (this.height * this.height);
         return this.bmi;
@@ -338,8 +337,8 @@ const john = {
     fullName: "John Smith",
     mass: 92,
     height: 1.95,
-
-     calcBMI: function (){
+    
+    calcBMI: function (){
         this.bmi = this.mass / (this.height * this.height);
         return this.bmi;
     } 
@@ -350,3 +349,13 @@ const higherBMI = markHigherThanJohn ? mark : john;
 const lowerBMI = markHigherThanJohn ? john : mark;
 
 console.log(`${higherBMI.fullName}'s BMI (${higherBMI.bmi}) is higher than ${lowerBMI.fullName}'s (${lowerBMI.bmi})!`);
+*/
+
+//Lesson 47
+// console.log('Lifting weights repitition 1 🏋️');
+// console.log('Lifting weights repitition 2 🏋️');
+// console.log('Lifting weights repitition 3 🏋️');
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repitition ${rep} 🏋️`);
+}
