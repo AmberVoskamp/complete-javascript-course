@@ -212,7 +212,6 @@ console.log(friends.includes(23));
 if (friends.includes("Janco")){
     console.log("You have a friend called Janco");
 }
-*/
 
 //Lesson 42 CHALLANGE 2
 const calcTip = function (billValue){
@@ -228,3 +227,21 @@ console.log(tips);
 
 const totals = [bills[0] + tips [0], bills[1] + tips [1], bills[2] + tips [2]];
 console.log(totals);
+*/
+
+//Lesson 43
+const amberArray = [
+    "Amber",
+    "Voskamp",
+    2037 - 2000,
+    "programmer",
+    ["Janco", "Eline", "Sabrina"]
+];
+
+const amber = {
+    firstNme: "Amber",
+    lastName: "Voskamp",
+    age: 2037 - 2000,
+    job: "programmer",
+    friends = ["Janco", "Eline", "Sabrina"]
+}
