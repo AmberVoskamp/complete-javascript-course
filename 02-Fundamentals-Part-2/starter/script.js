@@ -227,7 +227,6 @@ console.log(tips);
 
 const totals = [bills[0] + tips [0], bills[1] + tips [1], bills[2] + tips [2]];
 console.log(totals);
-*/
 
 //Lesson 43
 const amberArray = [
@@ -243,5 +242,43 @@ const amber = {
     lastName: "Voskamp",
     age: 2037 - 2000,
     job: "programmer",
-    friends = ["Janco", "Eline", "Sabrina"]
+    friends: ["Janco", "Eline", "Sabrina"]
+};
+*/
+
+//Lesson 44
+const amber = {
+    firstName: "Amber",
+    lastName: "Voskamp",
+    age: 2037 - 2000,
+    job: "programmer",
+    friends: ['Janco', 'Eline', 'Sabrina']
+};
+
+console.log(amber);
+
+console.log(amber.lastName);
+console.log(amber["lastName"]);
+
+const nameKey = "Name";
+console.log(amber[`first${nameKey}`]);
+console.log(amber[`last${nameKey}`]);
+
+//console.log(amber.`last${nameKey}`)
+
+const interestedIn = prompt("what do you want to know about jonas? Choose between firstName, lastName, age, job, and friends");
+
+if (amber[interestedIn]){
+    console.log(interestedIn, amber[interestedIn]); 
+} else {
+    console.log("Wrong request! Choose between firstName, lastName, age, job, and friends");
 }
+
+amber.location = "Netherlands";
+amber["socials"] = "@AmfoxVR";
+console.log(amber);
+
+// Challenge
+// Amber has 3 friends, and her best friend is called Micheal;
+console.log(`${amber.firstName} has ${amber.friends.length}, and her best friend is called ${amber.friends[0]}`);
+
