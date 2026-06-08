@@ -349,7 +349,6 @@ const higherBMI = markHigherThanJohn ? mark : john;
 const lowerBMI = markHigherThanJohn ? john : mark;
 
 console.log(`${higherBMI.fullName}'s BMI (${higherBMI.bmi}) is higher than ${lowerBMI.fullName}'s (${lowerBMI.bmi})!`);
-*/
 
 //Lesson 47
 // console.log('Lifting weights repitition 1 🏋️');
@@ -358,4 +357,56 @@ console.log(`${higherBMI.fullName}'s BMI (${higherBMI.bmi}) is higher than ${low
 
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repitition ${rep} 🏋️`);
+}
+*/
+
+//Lesson 48
+const amberArray = [
+    "Amber",
+    "Voskamp",
+    2037 - 2000,
+    "programmer",
+    ["Janco", "Eline", "Sabrina"],
+    true
+];
+
+const types = [];
+
+for (let i = 0; i < amberArray.length; i++) {
+    //Reading the amber Array
+    console.log(amberArray[i], typeof amberArray[i]);
+
+    //Filling types array
+    //types[i] = typeof amberArray[i];
+    types.push(typeof amberArray[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i])
+}
+
+console.log(ages);
+
+// Continue and break
+console.log("---ONLY STRING---");
+for (let i = 0; i < amberArray.length; i++) {
+    if (typeof amberArray[i] !== "string"){
+        continue;
+    }
+
+    console.log(amberArray[i], typeof amberArray[i]);
+}
+
+console.log("---BREAK WITH NUMBER---");
+for (let i = 0; i < amberArray.length; i++) {
+    if (typeof amberArray[i] === "number"){
+        break;
+    }
+
+    console.log(amberArray[i], typeof amberArray[i]);
 }
