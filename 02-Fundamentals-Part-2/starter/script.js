@@ -244,7 +244,6 @@ const amber = {
     job: "programmer",
     friends: ["Janco", "Eline", "Sabrina"]
 };
-*/
 
 //Lesson 44
 const amber = {
@@ -281,4 +280,45 @@ console.log(amber);
 // Challenge
 // Amber has 3 friends, and her best friend is called Micheal;
 console.log(`${amber.firstName} has ${amber.friends.length}, and her best friend is called ${amber.friends[0]}`);
+*/
+
+//Lesson 45
+
+const amber = {
+    firstName: "Amber",
+    lastName: "Voskamp",
+    birthYear: 2000,
+    job: "programmer",
+    friends: ['Janco', 'Eline', 'Sabrina'],
+    hasDriversLicense: true,
+
+    // calcAge: function (birthYear){
+    //     return 2037 - birthYear;
+    // }
+
+    //  calcAge: function (){
+    //     return 2037 - this.birthYear;
+    // }
+
+     calcAge: function(){
+        this.age = 2037 - this.birthYear
+        return this.age;
+    },
+
+    // Challenge
+    // "Amber is a 37 year old programmer, and he has a / no driver's license"
+    getSummary: function(){
+         return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and she has ${this.hasDriversLicense ? "a" : "no"} driver's license`;
+    }
+};
+
+console.log(amber.calcAge());
+console.log(amber.age);
+
+console.log(amber.age);
+console.log(amber.age);
+
+console.log(amber.getSummary());
+
+//console.log(amber['calcAge']());
 
