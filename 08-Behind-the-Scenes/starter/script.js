@@ -35,7 +35,6 @@ const firstName = 'Amber';
 calcAge(1991);
 //console.log(age);
 //printAge();
-*/
 
 console.log(me);
 // console.log(job);
@@ -52,11 +51,11 @@ console.log(addArrow);
 // console.log(addArrow(2, 3));
 
 function addDecl(a, b) {
-  return a + b;
+    return a + b;
 }
 
 const addExpr = function (a, b) {
-  return a + b;
+    return a + b;
 };
 
 var addArrow = (a, b) => a + b;
@@ -64,13 +63,13 @@ var addArrow = (a, b) => a + b;
 // Example
 console.log(numProducts);
 if (!numProducts) {
-  deleteShoppingCart();
+    deleteShoppingCart();
 }
 
 var numProducts = 10;
 
 function deleteShoppingCart() {
-  console.log('All products deleted');
+    console.log('All products deleted');
 }
 
 var x = 1;
@@ -80,3 +79,38 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
+*/
+
+//console.log(this);
+
+const calcAge = function (birthYear) {
+  console.log(2037 - birthYear);
+  //console.log(this);
+};
+
+const calcAgeArrow = birthYear => {
+  console.log(2037 - birthYear);
+  //console.log(this);
+};
+
+calcAgeArrow(2000);
+
+const amber = {
+  year: 2000,
+  calcAge: function () {
+    console.log(this);
+    console.log(2037 - this.year);
+  },
+};
+
+amber.calcAge();
+
+const matilda = {
+  year: 2017,
+};
+
+matilda.calcAge = amber.calcAge;
+matilda.calcAge();
+
+const f = amber.calcAge;
+f();
