@@ -113,54 +113,95 @@ matilda.calcAge();
 
 const f = amber.calcAge;
 f();
-*/
 
 // var firstName = 'Matilda';
 
 const amber = {
-  firstName: 'Amber',
-  year: 2000,
-  calcAge: function () {
-    // console.log(this);
-    console.log(2037 - this.year);
+    firstName: 'Amber',
+    year: 2000,
+    calcAge: function () {
+        // console.log(this);
+        console.log(2037 - this.year);
 
-    // SOLUTION 1
-    // const self = this; //Self or that
-    // const isMillenial = function () {
-    //   console.log(self);
-    //   console.log(self.year >= 1981 && self.year <= 1996);
-    //   //   console.log(this.year >= 1981 && this.year <= 1996);
-    // };
-
-    //SOLUTION 2
-    const isMillenial = () => {
-      console.log(this);
-      console.log(this.year >= 1981 && this.year <= 1996);
-      //   console.log(this.year >= 1981 && this.year <= 1996);
+        // SOLUTION 1
+        // const self = this; //Self or that
+        // const isMillenial = function () {
+            //   console.log(self);
+            //   console.log(self.year >= 1981 && self.year <= 1996);
+            //   //   console.log(this.year >= 1981 && this.year <= 1996);
+            // };
+            
+            //SOLUTION 2
+            const isMillenial = () => {
+                console.log(this);
+                console.log(this.year >= 1981 && this.year <= 1996);
+                //   console.log(this.year >= 1981 && this.year <= 1996);
+            };
+            isMillenial();
+        },
+        
+        greet: () => {
+            console.log(this);
+            console.log(`Hey ${this.firstName}`);
+        },
     };
-    isMillenial();
-  },
-
-  greet: () => {
-    console.log(this);
-    console.log(`Hey ${this.firstName}`);
-  },
-};
-
+    
 amber.greet();
 amber.calcAge();
 
 // Arguments keyword
 const addExpr = function (a, b) {
-  console.log(arguments);
-  return a + b;
+    console.log(arguments);
+    return a + b;
 };
 addExpr(2, 5);
 addExpr(2, 5, 8, 12);
 
 var addArrow = (a, b) => {
-  console.log(arguments);
-  return a + b;
+    console.log(arguments);
+    return a + b;
 };
 
 addArrow(2, 5, 8);
+*/
+
+const jessica1 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+};
+
+function marryPerson(originalPerson, newLastName) {
+  originalPerson.lastName = newLastName;
+  return originalPerson;
+}
+marryPerson(jessica1);
+
+const marriedJessica = marryPerson(jessica1, 'Davis');
+
+// console.log(`Before: `, jessica1);
+// console.log(`After: `, marriedJessica);
+
+const jessica = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  familiy: ['Alice', 'Bob'],
+};
+
+// Shallow copy
+// const jessicaCopy = { ...jessica };
+// jessicaCopy.lastName = 'Davis';
+
+// jessicaCopy.familiy.push('Mary');
+// jessicaCopy.familiy.push('John');
+// console.log(`Before: `, jessica);
+// console.log(`After: `, jessicaCopy);
+
+// Deep copy/clone
+const jessicaClone = structuredClone(jessica);
+jessicaClone.familiy.push('Mary');
+jessicaClone.familiy.push('John');
+
+console.log(`Original: `, jessica);
+console.log(`Clone: `, jessicaClone);
