@@ -493,4 +493,118 @@ console.log(firstBookMap);
 for (const [key, value] of firstBookMap) {
   if (typeof value === 'number') console.log(key);
 }
+
+// 15.1
+const ISBN = books[0].ISBN;
+console.log(ISBN[6], ISBN[4], ISBN[9], ISBN[8]);
+
+// 15.2
+const quote =
+'A computer once beat me at chess, but it was no match for me at kick boxing';
+const chessStartIndex = quote.indexOf('chess');
+console.log(quote.slice(chessStartIndex, chessStartIndex + 'chess'.length));
+
+// 15.3
+console.log(quote.slice(quote.lastIndexOf(' ') + 1));
+
+// 15.4
+
+const isContributor = function (author) {
+  return author.indexOf('Contributor') !== -1;
+};
+
+console.log(isContributor('Julie Sussman (Contributor)'));
+console.log(isContributor('Robert Sedgewick'));
+
+// 16.1
+const normalizeAuthorName = function (author) {
+  author = author.toLowerCase().trim();
+  const firstName = author.slice(0, author.indexOf(' '));
+  let lastName = '';
+  if (author.indexOf(' ') === author.lastIndexOf(' ')) {
+    lastName = author.slice(author.indexOf(' ') + 1, author.length);
+  } else {
+    lastName = author.slice(author.indexOf(' ') + 1, author.lastIndexOf(' '));
+}
+
+const CapFirstName = fixCapitalizationInName(firstName);
+const CapLastName = fixCapitalizationInName(lastName);
+
+return CapFirstName + ' ' + CapLastName;
+};
+
+const fixCapitalizationInName = function (name) {
+  const nameLower = name.toLowerCase();
+  return name[0].toUpperCase() + nameLower.slice(1);
+};
+
+console.log(normalizeAuthorName('  JuliE sussMan (Contributor)'));
+console.log(normalizeAuthorName('  JuliE sussMan'));
+
+// 16.2
+newBookTitle = books[1].title.replace('Programs', 'Software');
+console.log(newBookTitle);
+
+// 16.3
+const logBookTheme = function (bookTitle) {
+  bookTitle = bookTitle.trim().toLowerCase();
+  if (bookTitle.startsWith('computer')) {
+    console.log('This book is about computers');
+  }
+  if (bookTitle.includes('algorithms') && bookTitle.includes('structures')) {
+    console.log('This book is about algorithms and data structures');
+  }
+  if (
+    !bookTitle.includes('operating') &&
+    (bookTitle.endsWith('system') || bookTitle.endsWith('systems'))
+  ) {
+    console.log(
+      'This book is about some systems, but definitely not about operating systems',
+    );
+  }
+};
+
+logBookTheme('compUter algorithms structureS system');
+
+// 17.1
+const logBookCategories = function (bookCategories) {
+  for (const category of bookCategories.split(';')) {
+    console.log(category);
+  }
+};
+
+const bookCategories =
+'science;computing;computer science;algorithms;business;operating systems;networking;electronics';
+logBookCategories(bookCategories);
+
+// 17.2
+const getKeywordsAsString = function (books) {
+  const keywords = [];
+  for (const book of books) {
+    keywords.push(...book.keywords);
+  }
+  const uniqueKeywords = [...new Set(keywords)];
+  
+  return uniqueKeywords.join(';');
+};
+
+console.log(getKeywordsAsString(books));
+
+// 17.3
+
+const logBookChapters = function (bookChapters) {
+  for (const [title, pages] of bookChapters) {
+    console.log(`${title.padEnd(21, '_')}${pages}`);
+  }
+};
+
+const bookChapters = [
+  ['The Basics', 14],
+  ['Sorting', 254],
+  ['Searching', 372],
+  ['Graphs', 526],
+  ['Strings', 706],
+];
+logBookChapters(bookChapters);
+
 */
